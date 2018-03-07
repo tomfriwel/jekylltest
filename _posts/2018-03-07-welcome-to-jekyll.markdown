@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll! Long Long Long Long Long Long Long Long Long Long"
 siteimage: /assets/images/sample.jpg
 ---
 
@@ -8,6 +8,91 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+```javascript
+var height = window.innerHeight
+
+function say(str) {
+  console.log('say:'+str)
+}
+
+```
+
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+```javascript
+var height = window.innerHeight
+
+function say(str) {
+  console.log('say:'+str)
+}
+
+```
+
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+```javascript
+var height = window.innerHeight
+
+function say(str) {
+  console.log('say:'+str)
+}
+
+```
+
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+```javascript
+var height = window.innerHeight
+
+function say(str) {
+  console.log('say:'+str)
+}
+
+```
+
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+```javascript
+var height = window.innerHeight
+
+function say(str) {
+  console.log('say:'+str)
+}
+
+```
+
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
 ```javascript
 var height = window.innerHeight
 

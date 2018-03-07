@@ -1,4 +1,4 @@
-<header class="site-header" role="banner">
+
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     
@@ -10,7 +10,7 @@
       {% if page_paths %}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             {% for path in page_paths %}
@@ -25,4 +25,3 @@
         </div>
       {% endif %}
   </nav>
-</header>
