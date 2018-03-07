@@ -3,41 +3,32 @@ layout: default
 ---
 <div class="home">
   {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {% endif %} {{ content }} {% if site.posts.size > 0 %}
+  <!-- <h2 class="view">{{ page.list_title | default: "Posts" }}</h2> -->
 
-  {{ content }}
-
-  {% if site.posts.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {% for post in paginator.posts %}
-      <li>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+  <div class="view" style="overflow:hidden; text-align:center; margin-top:20px;">
+    {% for post in paginator.posts %}
+    <div class="card" style="width: 340px;vertical-align:top; display:inline-block; margin: 10px;">
+      {% if post.siteimage %}
+      <img class="card-img-top" src="{{site.baseurl}}{{post.siteimage}}" alt="Card image cap">
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title | escape }}</h5>
 
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        
-        {% if site.show_excerpts %}
-          {{ post.excerpt }}
-        {% endif %}
+        <span>{{ post.date | date: date_format }}</span>
+        <p class="card-text">
+          {% if site.show_excerpts %} {{ post.excerpt }} {% endif %}
+        </p>
+        <!-- <footer class="blockquote-footer">
+              <cite title="Source Title">Source Title</cite>
+          </footer> -->
+        <a href="{{ post.url | relative_url }}" class="btn btn-info btn-block" style="width:100%;">Read More</a>
+      </div>
+    </div>
+    {% endfor %}
 
-
-        {% if post.image %}
-          <img src="{{site.baseurl}}/{{post.image}}" alt="" srcset="">
-        {% endif %}
-
-        <hr class="post-seperator" />
-      </li>
-      {% endfor %}
-    </ul>
-
-
-    {% include paginator.html %}
-  {% endif %}
-
+  </div>
+  {% include paginator.html %} {% endif %}
 </div>
