@@ -86,3 +86,17 @@ $spacing-unit:     30px !default;
     .il    { color: #099 } // Literal.Number.Integer.Long
   }
   
+.svg-icon {
+  float: left;
+  width: 16px;
+  height: 16px;
+}
+.username {
+  float: left;
+}
+
+// override bootstrap classes
+  // .container, .navbar {
+  //   overflow: hidden;
+  // }
+  
