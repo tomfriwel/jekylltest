@@ -12,7 +12,6 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {% for post in paginator.posts %}
-      <h1>123</h1>
       <li>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
