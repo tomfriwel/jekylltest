@@ -44,7 +44,7 @@ baseurl: /jekylltest
 show_excerpts: true
 
 # page setting
-paginate: 6
+paginate: 1
 paginate_path: "/page:num/"
 
 # build setting

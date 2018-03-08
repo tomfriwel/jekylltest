@@ -9,12 +9,12 @@ layout: default
   
   {% if site.posts.size > 0 %}
   <!-- <h2 class="view">{{ page.list_title | default: "Posts" }}</h2> -->
-
   <div class="d-flex flex-wrap justify-content-around" style="overflow:hidden; margin-top:20px;">
     {% for post in paginator.posts %}
     <div class="card" style="min-width:200px; max-width:320px; margin: 30px 10px;">
       {% if post.siteimage %}
       <img class="card-img-top" src="{{site.baseurl}}{{post.siteimage}}" alt="Card image cap">
+      <!-- style="border-radius:.25rem; box-shadow:0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);" -->
       {% endif %}
       <div class="card-body">
         <h5 class="card-title">{{ post.title | escape }}</h5>
@@ -24,7 +24,7 @@ layout: default
         <p>
           {% if post.intro %} {{ post.intro }} {% endif %}
         </p>
-        <a href="{{ post.url | relative_url }}" class="btn btn-info btn-block" style="width:100%;">Read More</a>
+        <a class="btn btn-info btn-block" href="{{ post.url | relative_url }}" style="width:100%;">Read More</a>
       </div>
     </div>
     {% endfor %}
