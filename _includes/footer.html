@@ -1,9 +1,7 @@
-<div class="container border-top" style="margin-top:90px; padding-top:20px;">
+<div class="container border-top" style="margin-top:90px; padding-top:20px; margin-bottom:20px; overflow:hidden;">
       <h2 class="footer-heading">{{ site.title | escape }}</h2>
       <div class="footer-col footer-col-2">
           {% include social.html %}
         </div>
-      <div class="footer-col footer-col-3">
-          <p>{{ site.description | escape }}</p>
-      </div>
+      <footer class="blockquote-footer footer-col footer-col-3"><cite title="Source Title">{{ site.description | escape }}</cite></footer>
 </div>
