@@ -1,19 +1,5 @@
-<div class="container border-top d-flex" style="margin-top:90px; padding-top:20px;">
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-    <ul class="contact-list">
-        <li class="p-name">
-          {% if site.author %}
-            {{ site.author | escape }}
-          {% else %}
-            {{ site.title | escape }}
-          {% endif %}
-          </li>
-          {% if site.email %}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {% endif %}
-      </ul>
-      
-
+<div class="container border-top" style="margin-top:90px; padding-top:20px;">
+      <h2 class="footer-heading">{{ site.title | escape }}</h2>
       <div class="footer-col footer-col-2">
           {% include social.html %}
         </div>

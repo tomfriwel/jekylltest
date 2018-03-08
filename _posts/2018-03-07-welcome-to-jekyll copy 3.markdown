@@ -5,6 +5,14 @@ siteimage: /assets/images/sample.jpg
 ---
 
 
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
 Jekyll also offers powerful support for code snippets:
 
 ```javascript

@@ -85,15 +85,42 @@ $spacing-unit:     30px !default;
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
   }
-  
-.svg-icon {
-  float: left;
-  width: 16px;
-  height: 16px;
-}
-.username {
-  float: left;
-}
+
+  ul, li {
+    list-style: none;
+    overflow: hidden;
+  }
+  .social-media-list li {
+    margin-top: 5px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .social-media-list li a {
+    width: 100%;
+    height: 100%;
+  }
+  .social-media-list li a span {
+    margin-left: 5px;
+  }
+  .social-media-list .svg-icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+  }
+  .social-media-list .username {
+    float: left;
+    height: 100%;
+  }
+
+  .footer-heading, .footer-col {
+    float: left;
+    overflow: hidden;
+  }
+  .footer-col-3 {
+    width: 300px;
+  }
 
 // override bootstrap classes
   // .container, .navbar {
