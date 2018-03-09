@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 siteimage: /assets/images/sample.jpg
+comments: true
 ---
 
 

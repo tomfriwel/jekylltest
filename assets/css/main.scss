@@ -7,9 +7,7 @@ $spacing-unit:     30px !default;
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
- h1, h2, h3, h4, h5, h6,
- p, blockquote, pre,
- ul, ol, dl, figure,
+ 
  %vertical-rhythm {
    margin-bottom: $spacing-unit / 2;
  }
@@ -92,10 +90,12 @@ $spacing-unit:     30px !default;
   }
   .social-media-list {
     padding-left: 0;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .social-media-list li {
     margin-top: 5px;
-    width: 200px;
+    // width: 200px;
     height: 20px;
     font-size: 16px;
     line-height: 16px;

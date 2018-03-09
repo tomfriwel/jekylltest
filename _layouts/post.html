@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<div class="container" style="padding-top:20px;">
+<div class="container" style="max-width:768px;padding-top:20px;">
   <h1>{{ page.title | escape }}</h1>
   <p>{{ content }}</p>
 </div>
+{% if page.comments %} 
+  {% include comment.html %}
+{% endif %}
