@@ -90,6 +90,9 @@ $spacing-unit:     30px !default;
     list-style: none;
     overflow: hidden;
   }
+  .social-media-list {
+    padding-left: 0;
+  }
   .social-media-list li {
     margin-top: 5px;
     width: 200px;
@@ -114,13 +117,6 @@ $spacing-unit:     30px !default;
     height: 100%;
   }
 
-  .footer-heading, .footer-col {
-    float: left;
-    overflow: hidden;
-  }
-  .footer-col-3 {
-    width: 300px;
-  }
 
 // override bootstrap classes
   // .container, .navbar {

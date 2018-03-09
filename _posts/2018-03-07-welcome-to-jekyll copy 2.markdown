@@ -1,5 +1,6 @@
 ---
 layout: post
+author: haha
 title:  "Welcome to Jekyll!"
 siteimage: /assets/images/sample.jpg
 excerpt: 'haha123'
