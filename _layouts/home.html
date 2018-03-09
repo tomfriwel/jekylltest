@@ -2,21 +2,13 @@
 layout: default
 ---
 <div class="home">
-  {% if page.title %}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %} 
   {{ content }} 
-  
   {% if site.posts.size > 0 %}
   <!-- <h2 class="view">{{ page.list_title | default: "Posts" }}</h2> -->
-  <div class="card-columns" style="margin-top:20px;">
+  <div class="card-columns border-top" style="margin-top:20px;">
   <!-- <div class="d-flex flex-wrap justify-content-around" style="overflow:hidden; margin-top:20px;"> -->
     {% for post in paginator.posts %}
     <div class="card" style="margin: 30px 10px;">
-      {% if post.siteimage %}
-      <img class="card-img-top" src="{{site.baseurl}}{{post.siteimage}}" alt="Card image cap">
-      <!-- style="border-radius:.25rem; box-shadow:0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);" -->
-      {% endif %}
       <div class="card-body">
         <h5 class="card-title">{{ post.title | escape }}</h5>
 
