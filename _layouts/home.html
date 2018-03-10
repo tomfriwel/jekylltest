@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-  {% include content.html %}
   {% if site.posts.size > 0 %}
-  <div class="" style="max-width:768px;margin-top:20px;">
+  <div class="" style="float:left;max-width:768px;margin-top:20px;">
     
     {% for post in paginator.posts %}
     <div class="border-bottom" style="margin: 30px 0px;">
@@ -32,5 +31,7 @@ layout: default
     </div>
     {% endfor %}
   </div>
+
+  {% include content.html %}
   {% include paginator.html %} {% endif %}
 <script type="text/javascript" src="{{site.baseurl}}/asssets/js/tap-handle.js"></script>
