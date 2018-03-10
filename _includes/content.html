@@ -1,0 +1,5 @@
+{% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+        <h1>{{post.title}}</h1>
+    {% endfor %}
+{% endif %}
